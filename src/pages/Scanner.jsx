@@ -21,9 +21,9 @@ const Scanner = () => {
 
       const response =
         await axios.post(
-          "http://127.0.0.1:5000/api/detect/scan",
-          { url }
-        );
+  "https://phishguardai-y5a0.onrender.com/api/detect/scan",
+  data
+);
 
       setResult(response.data);
 

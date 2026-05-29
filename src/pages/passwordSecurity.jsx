@@ -16,10 +16,10 @@ const PasswordSecurity = () => {
       try {
 
         const response =
-          await axios.post(
-            "http://127.0.0.1:5000/api/password/analyze",
-            { password }
-          );
+         await axios.post(
+  "https://phishguardai-y5a0.onrender.com/api/password/analyze",
+  data
+);
 
         setResult(response.data);
 

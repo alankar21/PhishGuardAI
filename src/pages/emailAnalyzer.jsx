@@ -17,10 +17,9 @@ const EmailAnalyzer = () => {
 
         const response =
           await axios.post(
-            "http://127.0.0.1:5000/api/email/analyze",
-            { emailText }
-          );
-
+  "https://phishguardai-y5a0.onrender.com/api/email/analyze",
+  data
+);
         setResult(response.data);
 
       } catch (error) {
